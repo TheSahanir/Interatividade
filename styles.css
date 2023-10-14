@@ -153,4 +153,149 @@ body, html {
     }
 }
 
+.layer2 {
+    width: 100%;
+    background: url('2barcos.png');
+    background-size: auto 100%;
+}
 
+.layer3 {
+    width: 100%;
+    background: url('3navio.png');
+    background-size: auto 100%;
+}
+
+.layer4 {
+    width: 100%;
+    background: url('4mar.png');
+    background-size: auto 100%;
+}
+
+.layer5 {
+    width: 100%;
+    background: url('5mar.png');
+    background-size: auto 100%;
+}
+
+.layer6 {
+    width: 100%;
+    background: url('6mar.png');
+    background-size: auto 100%;
+}
+
+.layer7 {
+    width: 50%;
+    background: url('7casas.png');
+    background-size: auto 100%;
+    
+}
+
+.layer8 {
+    width: 100%;
+    background: url('8lua.png');
+    background-size: auto 100%;
+}
+
+.layer9 {
+    width: 100%;
+    background: url('9floresta.png');
+    background-size: auto 100%;
+}
+
+.layer10 {
+    width: 100%;
+    background: url('10piramide.png');
+    background-size: auto 100%;
+}
+
+.layer11 {
+    width: 100%;
+    background: url('11vegetacao.png');
+    background-size: auto 100%;
+}
+
+.layer12 {
+    width: 100%;
+    background: url('12soldado.png');
+    background-size: auto 100%;
+}
+
+.layer13 {
+    width: 100%;
+    background: url('13soldado2.png');
+    background-size: auto 100%;
+}
+
+.layer14 {
+    width: 95%;
+    background: url('14soldado.png');
+    background-size: auto 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+#unfoldButton {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(95, 79, 218, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#unfoldButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#textBox {
+    display: none;
+    width: 90%; 
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 8px;
+    animation: fadeIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Query para Tablets e Desktop */
+@media screen and (min-width: 768px) {
+    body, html {
+        width: 250vw; 
+    }
+    
+    #unfoldButton {
+        padding: 15px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    #textBox {
+        max-width: 300px;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
