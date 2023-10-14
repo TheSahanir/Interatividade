@@ -27,80 +27,80 @@ body, html {
 
 .layer2 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/2barcos.png');
+    background: url('2barcos.png');
     background-size: auto 100%;
 }
 
 .layer3 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/3navio.png');
+    background: url('3navio.png');
     background-size: auto 100%;
 }
 
 .layer4 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/4mar.png');
+    background: url('4mar.png');
     background-size: auto 100%;
 }
 
 .layer5 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/5mar.png');
+    background: url('5mar.png');
     background-size: auto 100%;
 }
 
 .layer6 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/6mar.png');
+    background: url('6mar.png');
     background-size: auto 100%;
 }
 
 .layer7 {
     width: 50%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/7casas.png');
+    background: url('7casas.png');
     background-size: auto 100%;
     
 }
 
 .layer8 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/8lua.png');
+    background: url('8lua.png');
     background-size: auto 100%;
 }
 
 .layer9 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/9floresta.png');
+    background: url('9floresta.png');
     background-size: auto 100%;
 }
 
 .layer10 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/10piramide.png');
+    background: url('10piramide.png');
     background-size: auto 100%;
 }
 
 .layer11 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/11vegetacao.png');
+    background: url('11vegetacao.png');
     background-size: auto 100%;
 }
 
 .layer12 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/12soldado.png');
+    background: url('12soldado.png');
     background-size: auto 100%;
 }
 
 .layer13 {
     width: 100%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/13soldado2.png');
+    background: url('13soldado2.png');
     background-size: auto 100%;
 }
 
 .layer14 {
     width: 95%;
-    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/14soldado.png');
+    background: url('14soldado.png');
     background-size: auto 100%;
 }
 
