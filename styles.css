@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    width: 250vw;  /* Set to the fixed width */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    font-family: Arial, sans-serif;
+    background-image: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/TAKE_01_COLOUR_V03_FLAT.png');
+}
+
+.parallax-container {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width:100%; /* Set to the fixed width */
+    z-index: 1;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-repeat: no-repeat; /* Prevent background images from repeating */
+    background-size: cover; /* Ensure background images cover the entire container */
+}
+
+.layer2 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/2barcos.png');
+    background-size: auto 100%;
+}
+
+.layer3 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/3navio.png');
+    background-size: auto 100%;
+}
+
+.layer4 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/4mar.png');
+    background-size: auto 100%;
+}
+
+.layer5 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/5mar.png');
+    background-size: auto 100%;
+}
+
+.layer6 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/6mar.png');
+    background-size: auto 100%;
+}
+
+.layer7 {
+    width: 50%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/7casas.png');
+    background-size: auto 100%;
+    
+}
+
+.layer8 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/8lua.png');
+    background-size: auto 100%;
+}
+
+.layer9 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/9floresta.png');
+    background-size: auto 100%;
+}
+
+.layer10 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/10piramide.png');
+    background-size: auto 100%;
+}
+
+.layer11 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/11vegetacao.png');
+    background-size: auto 100%;
+}
+
+.layer12 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/12soldado.png');
+    background-size: auto 100%;
+}
+
+.layer13 {
+    width: 100%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/13soldado2.png');
+    background-size: auto 100%;
+}
+
+.layer14 {
+    width: 95%;
+    background: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/14soldado.png');
+    background-size: auto 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* To ensure it's above the background image */
+}
+
+.hidden {
+    display: none;
+}
+
+#unfoldButton {
+    padding: 15px; /* Ajuste o tamanho conforme necessário */
+    width: 100px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    border-radius: 50%; /* Torna o botão redondo */
+    background-color: rgba(95, 79, 218, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#unfoldButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#textBox {
+    display: none;
+    width: 90%; /* Adjust based on your requirement */
+    max-width: 300px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    animation: fadeIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

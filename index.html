@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Path to your external CSS file -->
+</head>
+
+<body>
+    <div class="parallax-container">
+        <div class="parallax-section">
+            <div class="content">
+                <button id="unfoldButton">CORTEZ</button>
+                <div id="textBox" class="hidden">
+                    <p>Olá amiguinhos! Voces vao aprender agora sobre esse arrombado chamado Fernando Cortez.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="parallax-layer layer1"></div>
+        <div class="parallax-layer layer2"></div>
+        <div class="parallax-layer layer3"></div>
+        <div class="parallax-layer layer4"></div>
+        <div class="parallax-layer layer5"></div>
+        <div class="parallax-layer layer6"></div>
+        <div class="parallax-layer layer7"></div>
+        <div class="parallax-layer layer8"></div>
+        <div class="parallax-layer layer9"></div>
+        <div class="parallax-layer layer10"></div>
+        <div class="parallax-layer layer11"></div>
+        <div class="parallax-layer layer13"></div>
+        <div class="parallax-layer layer12"></div>
+        <div class="parallax-layer layer14"></div>
+        <div class="end-marker"></div>
+    </div>
+    <script>
+
+document.getElementById('unfoldButton').addEventListener('click', function() {
+    var textBox = document.getElementById('textBox');
+    if (textBox.style.display === 'none') {
+        textBox.style.display = 'block';
+    } else {
+        textBox.style.display = 'none';
+    }
+});
+
+window.addEventListener('scroll', function() {
+    let scrolled = window.scrollX;
+    const viewportWidth = window.innerWidth;
+
+    // Defina os pontos de início de cada grupo.
+    const group1Start = 0; // O grupo 1 começa no início
+    const group2Start = viewportWidth * 0.40; // Apenas um exemplo, ajuste conforme necessário
+    const group3Start = viewportWidth * 0.8; // Apenas um exemplo, ajuste conforme necessário
+
+    // Cálculo para determinar o scroll efetivo com base no grupo
+    const group1Scroll = Math.max(0, scrolled - group1Start);
+    const group2Scroll = Math.max(0, scrolled - group2Start);
+    const group3Scroll = Math.max(0, scrolled - group3Start);
+
+    // Ajuste as layers do Grupo 1
+    // document.querySelector('.layer1').style.transform = `translateX(${-group1Scroll * 0.0}px)`;
+    document.querySelector('.layer2').style.transform = `translateX(${-group1Scroll * 0.05}px)`;
+    document.querySelector('.layer3').style.transform = `translateX(${-group1Scroll * 0.1}px)`;
+    document.querySelector('.layer4').style.transform = `translateX(${-group1Scroll * 0.15}px)`;
+    document.querySelector('.layer5').style.transform = `translateX(${-group1Scroll * 0.2}px)`;
+    document.querySelector('.layer6').style.transform = `translateX(${-group1Scroll * 0.25}px)`;
+    document.querySelector('.layer7').style.transform = `translateX(${-group1Scroll * 0.3}px)`;
+    document.querySelector('.layer13').style.transform = `translateX(${-group3Scroll * 0.2}px)`;
+
+
+    // ... adicione outras layers do Grupo 1 aqui ...
+
+    // Ajuste as layers do Grupo 2
+    if (scrolled > group2Start) {
+        document.querySelector('.layer9').style.transform = `translateX(${-group2Scroll * 0.1}px)`;
+        document.querySelector('.layer11').style.transform = `translateX(${-group1Scroll * 0.2}px)`;
+        document.querySelector('.layer13').style.transform = `translateX(${-group3Scroll * 0.3}px)`;
+        document.querySelector('.layer12').style.transform = `translateX(${-group1Scroll * 0.1}px)`;
+
+        // ... adicione outras layers do Grupo 2 aqui ...
+    }
+
+    // Ajuste as layers do Grupo 3
+    if (scrolled > group3Start) {
+        document.querySelector('.layer8').style.transform = `translateX(${-group2Scroll * 0.1}px)`;
+        // document.querySelector('.layer10').style.transform = `translateX(${-group1Scroll * 0.0}px)`;
+        document.querySelector('.layer14').style.transform = `translateX(${-group3Scroll * 0.5}px)`;
+        // ... adicione outras layers do Grupo 3 aqui ...
+    }
+});
+
+function toggleTooltip() {
+    const tooltip = document.getElementById('infoBalloon');
+
+    if (tooltip.style.display === 'none' || tooltip.style.display === '') {
+        tooltip.style.display = 'block';
+    } else {
+        tooltip.style.display = 'none';
+    }
+}
+
+
+    </script>
+</body>
+
+</html>
