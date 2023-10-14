@@ -3,7 +3,7 @@ body, html {
     width: 250vw;  /* Set to the fixed width */
     overflow-x: scroll; /* Enable horizontal scrolling */
     font-family: Arial, sans-serif;
-    background-image: url('/Users/thed/Documents/Interactive Stories/Maias/Layers/TAKE_01_COLOUR_V03_FLAT.png');
+    background-image: url('TAKE_01_COLOUR_V03_FLAT.png');
 }
 
 .parallax-container {
